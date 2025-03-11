@@ -37,6 +37,9 @@ const Welcome = () => {
 
     if (!newErrors.name && !newErrors.lastname && !newErrors.email) {
       localStorage.setItem("authenticationComplete", "true");
+            localStorage.setItem("firstName", form.name);
+            localStorage.setItem("lastName", form.lastname);
+
       router.push("/uploader");
     }
   };
