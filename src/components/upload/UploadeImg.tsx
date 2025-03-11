@@ -86,7 +86,7 @@ const UploadeImg = () => {
       </div>
       <div className="flex items-center justify-center min-h-screen flex-col">
         <div className="w-full max-w-[768px] mx-auto">
-          <h1 className="text-center font-syne font-bold py-9 text-[#0D0D0D] text-[32px] leading-[100%]">
+          <h1 className="text-center font-syne font-bold py-9 text-[#0D0D0D] text-[32px] leading-[100%] max-md:text-2xl">
             Read & process your files online
           </h1>
           <div className="bg-white w-full max-w-[786px] h-[358px] mx-auto shadow-[0px_16px_42.7px_0px_#00000014] rounded-xl p-4">
@@ -140,6 +140,33 @@ const UploadeImg = () => {
                   </label>
                 </div>
               )}
+            </div>
+          </div>
+          <div className="flex items-center max-md:items-start justify-between mt-[48px] max-md:mt-7 max-sm:mt-4 max-md:flex-wrap gap-5 px-4">
+            <p className="text-sm font-normal text-[#0D0D0D] max-w-[355px] leading-[150%] max-md:max-w-none">
+              Our accelerator allows you to upload, read, and process multiple
+              file types (e.g., Python, JAR, ZIP), extracting key data like
+              classes, methods, and structure for easy review.
+            </p>
+            <div className="flex flex-col">
+              <p className="flex items-center font-normal text-sm leading-[150%] gap-1.5 mt-2">
+                <span>
+                  <CheckBox />
+                </span>
+                Works on any device—without installation
+              </p>
+              <p className="flex items-center font-normal text-sm leading-[150%] gap-1.5 mt-2">
+                <span>
+                  <CheckBox />
+                </span>
+                Supports more than 10 filetypes
+              </p>
+              <p className="flex items-center font-normal text-sm leading-[150%] gap-1.5 mt-2">
+                <span>
+                  <CheckBox />
+                </span>
+                Start reading now—no registration needed
+              </p>
             </div>
           </div>
         </div>

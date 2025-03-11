@@ -12,15 +12,17 @@ const ImgName = () => {
           <Header />
         </div>
         {/* main-content */}
-        <div className="max-w-[1140px] mx-auto pb-[46px] max-md:pb-5">
-          <div className="flex items-center justify-between mt-5">
-            <h3 className="img-name font-syne text-2xl font-semibold leading-[100%]">file123.zip</h3>
+        <div className="max-w-[1140px] mx-auto pb-[46px] max-md:pb-5 flex items-center justify-center flex-col min-h-screen relative">
+          <div className="flex items-center justify-between mt-5 w-full">
+            <h3 className="img-name font-syne text-2xl font-semibold leading-[100%]">
+              file123.zip
+            </h3>
             <button className="flex font-syne items-center justify-center border border-solid border-[#0D0D0D80] rounded-lg min-w-[193px] h-[49px]">
               Upload more files
             </button>
           </div>
-          <div className="flex items-center justify-between flex-wrap mt-6 gap-5">
-            <div className="w-full justify-between items-center max-w-[558px] flex rounded-xl bg-white py-[19px] px-4">
+          <div className="flex items-center justify-between max-lg:flex-wrap mt-6 gap-5 max-lg:justify-center">
+            <div className="w-full justify-between items-center min-w-[558px] flex rounded-xl bg-white py-[19px] px-4">
               <div className="flex items-center gap-3">
                 <ComplexityIcon />
                 <p className="font-syne font-medium text-xl leading-[110%] ">
@@ -48,10 +50,12 @@ const ImgName = () => {
               </div>
             </div>
           </div>
-          <h4 className="font-semibold text-2xl my-6 leading-[150%] text-[#0D0D0D]">
-            Detailed metrices
-          </h4>
-          <div className="flex items-center gap-6 max-lg:flex-wrap">
+          <div className="flex items-center !justify-start max-w-[300px] mr-auto">
+            <h4 className="font-semibold !text-start font-syne text-2xl my-6 leading-[150%] text-[#0D0D0D]">
+              Detailed metrices
+            </h4>
+          </div>
+          <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:justify-center w-full">
             <div className="w-full max-w-[558px]">
               {DETAIL_LIST.map((obj, i) => (
                 <div

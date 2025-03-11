@@ -21,7 +21,7 @@ const Header = () => {
       <div className='flex items-center gap-[9px] max-sm:mt-5'>
         <Image src='/assets/images/png/jhon-doe-img.png' alt='user' width={40} height={40} className='w-full max-w-[40px]' />
         <div className='flex flex-col'>
-          <p className='text-base font-medium text-black leading-[100%]'>John Doe</p>
+          <p className='text-base font-medium text-black leading-[100%] font-syne'>John Doe</p>
           <p className='text-xs font-normal text-black opacity-70 leading-[100%]'>Admin</p>
         </div>
         <ArrowIcon/>
