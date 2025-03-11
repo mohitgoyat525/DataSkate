@@ -83,7 +83,6 @@ const Welcome = () => {
             placeholder="Enter your email"
           />
           {errors.email && <p className="text-red-600">{errors.email}</p>}
-
           <button
             onClick={formHandler}
             type="submit"
