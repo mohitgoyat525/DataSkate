@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../common/Header";
 import {
   ComplexityIcon,
@@ -14,9 +14,18 @@ import Link from "next/link";
 
 const ImgName = () => {
   const [click, setClick] = useState<number | null>(0);
+  const [imgName, setImgName] = useState<string | null>(null);
   const activeHandler = (index: number) => {
     setClick((prev) => (prev === index ? null : index));
   };
+
+  useEffect(() => {
+    const storedImgName = localStorage.getItem("uploadedFileName");
+    if (storedImgName) {
+      setImgName(storedImgName);
+    }
+  }, []);
+
 
   return (
     <>
@@ -29,7 +38,7 @@ const ImgName = () => {
         <div className="max-w-[1140px] mx-auto pb-[46px] max-md:pb-5 flex items-center justify-center flex-col min-h-screen relative">
           <div className="flex items-center justify-between mt-5 w-full">
             <h3 className="img-name font-syne text-2xl font-semibold leading-[100%]">
-              file123.zip
+              {imgName || "file123.zip"}
             </h3>
             <button className="flex font-syne items-center justify-center border border-solid border-[#0D0D0D80] rounded-lg min-w-[193px] h-[49px] transition-all ease-linear duration-300 hover:bg-[#ed1c24] hover:text-[#fff1f2] text-sm font-medium leading-[100%]">
               Upload more files
