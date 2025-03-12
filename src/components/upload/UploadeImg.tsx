@@ -27,7 +27,6 @@ const UploadeImg = () => {
             router.push("/imgdata");
           }, 500);
         };
-
         reader.readAsDataURL(file);
         simulateProgress();
       });

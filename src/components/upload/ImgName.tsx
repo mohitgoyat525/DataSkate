@@ -93,7 +93,9 @@ const ImgName = () => {
                   onClick={(e) => {
                     activeHandler(i);
                   }}
-                  className={`py-3 px-4 flex justify-between items-center bg-white rounded-lg border mt-4 hover:border-[#ED1C24] duration-300 ease-linear max-lg:max-w-none ${
+                  className={`py-3 px-4 flex justify-between items-center bg-white rounded-lg border ${
+                    i === 0 ? "!mt-0" : "mt-4"
+                  } hover:border-[#ED1C24] duration-300 ease-linear max-lg:max-w-none ${
                     click === i ? "border-[#EA4335]" : "border-transparent"
                   }`}
                 >
