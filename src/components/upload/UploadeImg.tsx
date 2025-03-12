@@ -178,7 +178,7 @@ const UploadeImg = () => {
         className="bottom-[95px] w-full max-w-[169px] right-0 absolute pointer-events-none"
       />
       <div className="bg-black">
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] mx-auto px-4">
           <Footer />
         </div>
       </div>

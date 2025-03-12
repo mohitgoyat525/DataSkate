@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between mx-w-[1440px] mx-auto max-sm:flex-wrap">
+    <div className="flex items-center justify-between mx-w-[1140px] mx-auto max-sm:flex-wrap">
       <div className="flex items-center gap-[10px]">
         <Link href="/">
           <Image
